@@ -1,0 +1,28 @@
+cargo-features = ["workspace-inheritance"]
+
+[package]
+name = "sol-rewards-vault-program"
+version = "0.1.0"
+edition = "2021"
+license = "WTFPL"
+publish = false
+
+[dependencies]
+solana-program.workspace = true
+num-derive.workspace = true
+num-traits.workspace = true
+num_enum.workspace = true
+bytemuck.workspace = true
+
+[features]
+test-bpf = []
+
+[dev-dependencies]
+assert_matches.workspace = true
+solana-program-test.workspace = true
+solana-sdk.workspace = true
+#solana-logger.workspace = true
+#solana-validator.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]

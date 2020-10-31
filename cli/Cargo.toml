@@ -1,0 +1,23 @@
+cargo-features = ["workspace-inheritance"]
+
+[package]
+name = "sol-rewards-vault-cli"
+version = "0.1.0"
+edition = "2021"
+license = "WTFPL"
+publish = false
+
+[dependencies]
+clap.workspace = true
+solana-clap-v3-utils.workspace = true
+solana-cli-config.workspace = true
+solana-client.workspace = true
+solana-logger.workspace = true
+solana-remote-wallet.workspace = true
+solana-sdk.workspace = true
+tokio.workspace = true
+sol-rewards-vault-program = { path = "../program" }
+
+[dev-dependencies]
+solana-test-validator.workspace = true
+

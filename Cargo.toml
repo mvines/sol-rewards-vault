@@ -1,0 +1,23 @@
+[workspace]
+members = [
+  "cli",
+  "program"
+]
+
+[workspace.dependencies]
+assert_matches = "1.4.0"
+bytemuck = { version = "1.8.0", features = ["derive"] }
+clap = { version = "3", features = ["cargo"] }
+num-derive = "0.3"
+num-traits = "0.2"
+num_enum = "0.5.4"
+solana-clap-v3-utils = "=1.14.4"
+solana-cli-config = "=1.14.4"
+solana-client = "=1.14.4"
+solana-logger = "=1.14.4"
+solana-program = "=1.14.4"
+solana-program-test = "=1.14.4"
+solana-remote-wallet = "=1.14.4"
+solana-sdk = "=1.14.4"
+solana-test-validator = "=1.14.4"
+tokio = { version = "1", features = ["full"] }
