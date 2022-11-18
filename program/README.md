@@ -26,7 +26,7 @@ the unique PDA for the vote account.
 
 While within the vault, the `RewardsVaultInstruction::ClaimRewards` instruction
 ensures the reward authority is a signer and then invokes the vote program with
-the PDA as signer to affect the withdrawal.
+the PDA as signer to effect the withdrawal.
 
 ### Usage
 See the `sol-rewards-vault-cli` command-line program
